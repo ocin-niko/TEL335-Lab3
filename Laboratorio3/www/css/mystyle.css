@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-10-2017, 19:37:54
+    Author     : USM TEL
+*/
+
+body{
+    color: #f5f5f5;
+    background-color: #222831;
+}
+
+div {
+    display: block;
+    color: #393e46;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #393e46;
+}
+nav a {
+    display: inline;
+    background-color: #f96d00;
+    color: #32424a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav a:hover {
+    color: #f5f5f5;
+    background-color: #393e46;
+}
+
+.hide{
+    display: none
+}
+
+#resultado{
+    display: block;
+}
+
+#curva{
+    background-color: #01ecd5;
+}
+
+#triangulo{
+    background-color: #fc3a52;
+}
+

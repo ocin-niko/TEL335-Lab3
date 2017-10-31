@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Herramienta de Matemáticas.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css" media="all">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+	<script src="https://wzrd.in/standalone/function-plot@1.14.0"></script>
+        <script src="js/myscript.js"></script>
+    </head>
+    <body>
+        OPCIONES <nav>
+            <a onclick="hiden(0);">Solucion de Polinomios</a>
+            <a onclick="hiden(2);">Solucion de Triangulo Rectangulo</a>
+        </nav>
+        <div id="curva" class="hide">Solución de Polinomios de 2° grado.
+            <form>
+                <input type="text" id="a" size="10" value="1">X^2+
+                <input type="text" id="b" size="10" value="0">X+
+                <input type="text" id="c" size="10" value="0">
+                <input type="submit" value="Solve" onclick="event.preventDefault();evaluar();">
+            </form>
+            <div id="resultado1" class="resultado"></div>
+        </div>
+        <div id="triangulo" class="hide">Solucion de Triangulo Rectangulo
+            <form>
+                Cateto Opuesto:<input type="text" id="co" size="10" value="1">  
+                Cateto Adyacente:<input type="text" id="ca" size="10" value="1">    
+                Hipotenusa:<input type="text" id="hip" size="10" value="X">
+                <input type="submit" value="Solve" onclick="event.preventDefault();solTrian();">
+            </form>
+            <div id="resultado2" class="resultado"></div>
+        </div>
+    </body>
+</html>
